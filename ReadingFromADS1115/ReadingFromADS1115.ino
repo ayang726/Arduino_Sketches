@@ -4,6 +4,7 @@ ADS1115_COMM ads_comm = ADS1115_COMM();
 
 void setup()
 {
+	ads_comm.setup();
 	Serial.begin(9600);
 	Serial.println("Start Monitoring Analog Inputs");
 }
